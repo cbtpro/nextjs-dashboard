@@ -1,9 +1,9 @@
 import type { NextAuthConfig } from 'next-auth';
  
-// const basePath = process.env.NODE_ENV === 'development' ? `${process.env.AUTH_URL}` : `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/auth`;
+const basePath = process.env.NODE_ENV === 'development' ? `${process.env.AUTH_URL}` : `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/auth`;
 
 export const authConfig = {
-  // basePath,
+  basePath,
   pages: {
     signIn: '/login',
   },
